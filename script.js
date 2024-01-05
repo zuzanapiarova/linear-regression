@@ -21,13 +21,13 @@ function calculateLinearRegression(yArr, xArr){
     //we can express the linear regression formula f(x) = ß0 + ß1*x, if ß1 > 0, don't print '+' to the formula, use string interpolation and ternary operators to reduce the amount of code
     let formula = `f(x) = ß0 + ß1*x = ${ß0} ${ß1 > 0 ? '+' : ''}${ß1}x`;
     return formula;
-    }
+    };
     
     //2 sample sets that can be used as input, the results can be checked in the respected sources
     const sampleYSet1 = [213, 210, 205, 203, 202, 200, 199, 198, 196, 193];
     const sampleXSet1 = [0.43, 0.64, 0.50, 0.71, 0.71, 0.86, 1.07, 1.07, 1.14, 1.29];
-    const sampleXSet2 = [43, 21, 25, 42, 57, 59];
     const sampleYSet2 = [99, 65, 79, 75, 87, 81];
+    const sampleXSet2 = [43, 21, 25, 42, 57, 59];
     //function call to calculateLinearRegression with example data sampleYSet1, sampleXSet1;
     console.log(calculateLinearRegression(sampleYSet2, sampleXSet2));
     
