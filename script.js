@@ -8,10 +8,10 @@ function calculateLinearRegression(yArr, xArr){
     //compute the sums of all of the components that we need in the formulas for ß0, ß1
     //for this use a for loop, that with each increment will move to another element of the arrays yArr, xArr
     for(let i = 0; i < yArr.length; i++){
-    sumY = sumY + yArr[i];
-    sumX = sumX + xArr[i];
-    sumXsquared = sumXsquared + (xArr[i] * xArr[i]);
-    sumXY = sumXY + (xArr[i] * yArr[i])
+        sumY = sumY + yArr[i];
+        sumX = sumX + xArr[i];
+        sumXsquared = sumXsquared + (xArr[i] * xArr[i]);
+        sumXY = sumXY + (xArr[i] * yArr[i])
     };
     //print intermediate results to the console for better understanding, use string interpolation for reducing LOC
     console.log(`n = ${n}, Σy = ${sumY}, Σx = ${sumX}, Σx^2 = ${sumXsquared}, Σxy = ${sumXY}`);
