@@ -13,6 +13,7 @@ function calculateLinearRegression(yArr, xArr){
     sumXsquared = sumXsquared + (xArr[i] * xArr[i]);
     sumXY = sumXY + (xArr[i] * yArr[i])
     };
+    //print intermediate results to the console for better understanding, use string interpolation for reducing LOC
     console.log(`n = ${n}, Σy = ${sumY}, Σx = ${sumX}, Σx^2 = ${sumXsquared}, Σxy = ${sumXY}`);
     //find coefficient ß1 = (n(sum(x*y)) - sum(x)*sum(y)) / (n(sum(x^2)) - sum(x)^2), round to 3 decimals
     let ß1 = ((n * sumXY - sumX*sumY) / (n*sumXsquared - sumX*sumX)).toFixed(3);
@@ -28,6 +29,7 @@ function calculateLinearRegression(yArr, xArr){
     const sampleXSet1 = [0.43, 0.64, 0.50, 0.71, 0.71, 0.86, 1.07, 1.07, 1.14, 1.29];
     const sampleYSet2 = [99, 65, 79, 75, 87, 81];
     const sampleXSet2 = [43, 21, 25, 42, 57, 59];
-    //function call to calculateLinearRegression with example data sampleYSet1, sampleXSet1;
-    console.log(calculateLinearRegression(sampleYSet2, sampleXSet2));
+    //example function call to calculateLinearRegression with sample data;
+    //console.log(calculateLinearRegression(sampleYSet1, sampleXSet1));
+
     
